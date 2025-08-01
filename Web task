@@ -1,0 +1,243 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Shahzaib Shaikh - Resume</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <h1>Shahzaib Shaikh</h1>
+    <h2>Web Developer | Tech Enthusiast</h2>
+    <p>Passionate about building responsive websites and solving real-world problems with clean code.</p>
+  </header>
+
+  <!-- Contact -->
+  <section class="contact">
+    <a href="mailto:shahzaib@example.com">shahzaib@example.com</a>
+    <a href="https://github.com/shahzaib" target="_blank"><i class="fab fa-github"></i></a>
+    <a href="https://linkedin.com/in/shahzaib" target="_blank"><i class="fab fa-linkedin"></i></a>
+    <span>Karachi, Pakistan</span>
+  </section>
+
+  <!-- About -->
+  <section class="about">
+    <h3>About Me</h3>
+    <p>I am a dedicated web developer with a strong passion for front-end development. I enjoy crafting interactive and user-friendly websites that deliver great user experiences. Always eager to learn and grow in the tech field.</p>
+  </section>
+
+  <!-- Skills -->
+  <section class="skills">
+    <h3>Skills</h3>
+    <div class="skills-grid">
+      <span>HTML</span>
+      <span>CSS</span>
+      <span>JavaScript</span>
+      <span>Responsive Design</span>
+      <span>Git</span>
+      <span>Teamwork</span>
+      <span>Problem Solving</span>
+      <span>Leadership</span>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section class="experience">
+    <h3>Experience</h3>
+    <div class="job">
+      <h4>Front-End Intern</h4>
+      <h5>High Tech Software House</h5>
+      <span>Jan 2025 – Present</span>
+      <ul>
+        <li>Designed and built responsive UI components using HTML, CSS, and JavaScript.</li>
+        <li>Collaborated with a team of developers to develop internal tools and websites.</li>
+        <li>Improved page load speed and mobile responsiveness.</li>
+      </ul>
+    </div>
+    <div class="job">
+      <h4>Web Developer Intern</h4>
+      <h5>CodeCrafters</h5>
+      <span>Jul 2024 – Dec 2024</span>
+      <ul>
+        <li>Built personal projects using modern web technologies.</li>
+        <li>Participated in code reviews and project planning meetings.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section class="education">
+    <h3>Education</h3>
+    <div>
+      <h4>BS in Computer Science</h4>
+      <h5>University of Karachi</h5>
+      <span>2021 – 2025</span>
+      <p>GPA: 3.6 | Final Year Project: E-Commerce Platform</p>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section class="projects">
+    <h3>Projects</h3>
+    <div class="project">
+      <h4>Portfolio Website</h4>
+      <p>Responsive personal portfolio to showcase skills and projects.</p>
+      <a href="https://github.com/shahzaib/portfolio" target="_blank">GitHub</a>
+    </div>
+    <div class="project">
+      <h4>To-Do App</h4>
+      <p>Simple task manager built with HTML, CSS & JavaScript.</p>
+      <a href="https://github.com/shahzaib/todo-app" target="_blank">GitHub</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <button id="scrollTopBtn" title="Go to top">⬆</button>
+    <p>&copy; 2025 Shahzaib Shaikh</p>
+  </footer>
+
+</body>
+</html>
+
+
+---
+
+✅ style.css
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
+  padding: 20px;
+}
+
+header, section {
+  margin-bottom: 40px;
+  padding: 20px;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.header h1 {
+  font-size: 2rem;
+  color: #222;
+}
+
+.header h2 {
+  color: #555;
+  margin: 5px 0;
+}
+
+.contact {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  font-size: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact a, .contact span {
+  text-decoration: none;
+  color: #444;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 10px;
+}
+
+.skills-grid span {
+  background: #e0e0e0;
+  padding: 10px;
+  text-align: center;
+  border-radius: 10px;
+  transition: background 0.3s ease;
+}
+
+.skills-grid span:hover {
+  background: #c0c0c0;
+}
+
+.job, .project, .education div {
+  margin-top: 20px;
+}
+
+ul {
+  list-style: disc;
+  margin-left: 20px;
+}
+
+footer {
+  text-align: center;
+  margin-top: 50px;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+#scrollTopBtn {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background: #333;
+  color: #fff;
+  padding: 10px 14px;
+  border: none;
+  border-radius: 50%;
+  font-size: 18px;
+  cursor: pointer;
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .skills-grid {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  }
+
+  .header h1 {
+    font-size: 1.5rem;
+  }
+}
+
+
+---
+
+✅ script.js
+
+// Scroll to top button
+const scrollBtn = document.getElementById("scrollTopBtn");
+
+window.onscroll = function () {
+  scrollBtn.style.display = window.scrollY > 300 ? "block" : "none";
+};
+
+scrollBtn.addEventListener("click", () => {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+});
+
+
+---
+
+✅ You Can Add PDF Download Button (Optional)
+
+<!-- Add inside footer or header -->
+<a href="your-resume.pdf" download class="download-btn">Download CV (PDF)</a>
